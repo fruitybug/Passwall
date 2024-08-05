@@ -12,7 +12,7 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Europe/Moscow'
 
 uci set network.wan.peerdns="0"
 
@@ -22,7 +22,7 @@ uci set network.wan.dns='1.1.1.1'
 
 uci set network.wan6.dns='2001:4860:4860::8888'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='MSK-3'
 
 uci commit system
 
@@ -95,12 +95,15 @@ opkg install kmod-tun
 
 >/etc/banner
 
-echo "    ___    __  ___________  __  ______  __________ ___________   __
-   /   |  /  |/  /  _/ __ \/ / / / __ \/ ___/ ___// ____/  _/ | / /
-  / /| | / /|_/ // // /_/ / /_/ / / / /\__ \\__ \ / __/  / //  |/ /
- / ___ |/ /  / // // _  _/ __  / /_/ /___/ /__/ / /____/ // /|  /
-/_/  |_/_/  /_/___/_/ |_/_/ /_/\____//____/____/_____/___/_/ |_/                                                                                                
-telegram : @AmirHosseinTSL" >> /etc/banner
+echo " #     #                      #####                #     # ######  #     # 
+ ##    # ###### #    # ##### #     # ###### #    # #     # #     # ##    # 
+ # #   # #       #  #    #   #       #      ##   # #     # #     # # #   # 
+ #  #  # #####    ##     #   #  #### #####  # #  # #     # ######  #  #  # 
+ #   # # #        ##     #   #     # #      #  # #  #   #  #       #   # # 
+ #    ## #       #  #    #   #     # #      #   ##   # #   #       #    ## 
+ #     # ###### #    #   #    #####  ###### #    #    #    #       #     # 
+                                                                                                                                                                          
+telegram : @NextGenVPN_RU" >> /etc/banner
 
 sleep 1
 
@@ -156,7 +159,7 @@ echo -e "${GREEN} XRAY : OK ! ${NC}"
 
  sleep 2
   
-rm -f amirhossein.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
+rm -f amirhossein.sh && wget https://raw.githubusercontent.com/fruitybug/Passwall/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
 
 fi
 
@@ -165,7 +168,7 @@ fi
 
 cd /tmp
 
-wget -q https://amir3.space/iam.zip
+wget -q https://github.com/fruitybug/Passwall/blob/main/iam.zip
 
 unzip -o iam.zip -d /
 
@@ -174,9 +177,9 @@ cd
 ########
 
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Europe/Moscow'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='MSK-3'
 
 
 uci set passwall2.@global_forwarding[0]=global_forwarding

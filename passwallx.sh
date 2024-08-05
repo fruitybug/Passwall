@@ -12,7 +12,7 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Europe/Moscow'
 
 uci set network.wan.peerdns="0"
 
@@ -22,7 +22,7 @@ uci set network.wan.dns='1.1.1.1'
 
 uci set network.wan6.dns='2001:4860:4860::8888'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='MSK-3'
 
 uci commit system
 
@@ -107,7 +107,7 @@ echo "Installing Passwall 2 ..."
 
 sleep 2
 
-rm -f passwall2x.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/main/passwall2x.sh && chmod 777 passwall2x.sh && sh passwall2x.sh
+rm -f passwall2x.sh && wget https://raw.githubusercontent.com/fruitybug/Passwall/main/passwall2x.sh && chmod 777 passwall2x.sh && sh passwall2x.sh
 
  
 ;;
