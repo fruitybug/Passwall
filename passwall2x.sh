@@ -230,7 +230,7 @@ uci commit passwall2
 
 uci commit system
 
-echo -e "${YELLOW} WiFi SSID : VPN 2G ${ENDCOLOR}"
+echo -e "${YELLOW} WiFi SSID : NextGenVPN 2G ${ENDCOLOR}"
 
 echo -e "${GREEN} WiFi Key : 10203040 ${ENDCOLOR}"
 
@@ -238,11 +238,11 @@ echo -e "${YELLOW}** NEW IP ADDRESS : 192.168.27.1 **${ENDCOLOR}"
 
 echo -e "${YELLOW}** Warning : ALL Settings Will be Change in 10 Seconds ** ${ENDCOLOR}"
 
-echo -e "${MAGENTA} Made With Love By : AmirHossein ${ENDCOLOR}"
+echo -e "${MAGENTA} Made With Love By : NextGenVPN ${ENDCOLOR}"
 
 sleep 10
 
-uci set system.@system[0].hostname=By-AmirHossein
+uci set system.@system[0].hostname=NextGenVPN
 
 uci commit system
 
@@ -257,7 +257,7 @@ uci commit network
 
 
 uci delete wireless.radio0.disabled='1'
-uci set wireless.default_radio0.ssid='VPN 2G'
+uci set wireless.default_radio0.ssid='NextGenVPN 2G'
 uci set wireless.default_radio0.encryption='psk2+ccmp'
 uci set wireless.default_radio0.key='10203040'
 uci set wireless.default_radio0.mode='ap'
@@ -275,7 +275,7 @@ uci commit
 
 echo -e "${YELLOW}** Warning : Router Will Be Reboot ... After That Login With New IP Address : 192.168.27.1 ** ${ENDCOLOR}"
 
-echo -e "${YELLOW} WiFi SSID : VPN 2G ${ENDCOLOR}"
+echo -e "${YELLOW} WiFi SSID : NextGenVPN 2G ${ENDCOLOR}"
 echo -e "${GREEN} WiFi Key : 10203040 ${ENDCOLOR}"
 
 sleep 5
